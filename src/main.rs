@@ -18,7 +18,7 @@ impl EventHandler for Handler {
     async fn message(&self, ctx: Context, msg: Message) {
         if msg.content == HELP_COMMAND {
             if let Err(why) = msg.channel_id.say(&ctx.http,
-                                     "Testicle").await {
+                                     "Testicles").await {
                 println!("Error sending said messag {:?}", why);
             }
         }
