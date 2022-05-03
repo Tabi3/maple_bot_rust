@@ -1,2 +1,0 @@
-cargo:rustc-env=TYPENUM_BUILD_CONSTS=c:\Users\Neon\Desktop\Rust\maple_bot\maple_bot_rust\maple_bot_rust\target\debug\build\typenum-81fcded9a282014d\out\consts.rs
-cargo:rustc-env=TYPENUM_BUILD_OP=c:\Users\Neon\Desktop\Rust\maple_bot\maple_bot_rust\maple_bot_rust\target\debug\build\typenum-81fcded9a282014d\out\op.rs
