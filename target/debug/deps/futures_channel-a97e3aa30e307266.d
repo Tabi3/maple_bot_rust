@@ -1,0 +1,10 @@
+c:\Users\Neon\Desktop\Rust\maple_bot\maple_bot_rust\maple_bot_rust\target\debug\deps\futures_channel-a97e3aa30e307266.rmeta: C:\Users\Neon\.cargo\registry\src\github.com-1ecc6299db9ec823\futures-channel-0.3.21\src\lib.rs C:\Users\Neon\.cargo\registry\src\github.com-1ecc6299db9ec823\futures-channel-0.3.21\src\lock.rs C:\Users\Neon\.cargo\registry\src\github.com-1ecc6299db9ec823\futures-channel-0.3.21\src\mpsc\mod.rs C:\Users\Neon\.cargo\registry\src\github.com-1ecc6299db9ec823\futures-channel-0.3.21\src\mpsc\queue.rs C:\Users\Neon\.cargo\registry\src\github.com-1ecc6299db9ec823\futures-channel-0.3.21\src\mpsc\sink_impl.rs C:\Users\Neon\.cargo\registry\src\github.com-1ecc6299db9ec823\futures-channel-0.3.21\src\oneshot.rs
+
+c:\Users\Neon\Desktop\Rust\maple_bot\maple_bot_rust\maple_bot_rust\target\debug\deps\futures_channel-a97e3aa30e307266.d: C:\Users\Neon\.cargo\registry\src\github.com-1ecc6299db9ec823\futures-channel-0.3.21\src\lib.rs C:\Users\Neon\.cargo\registry\src\github.com-1ecc6299db9ec823\futures-channel-0.3.21\src\lock.rs C:\Users\Neon\.cargo\registry\src\github.com-1ecc6299db9ec823\futures-channel-0.3.21\src\mpsc\mod.rs C:\Users\Neon\.cargo\registry\src\github.com-1ecc6299db9ec823\futures-channel-0.3.21\src\mpsc\queue.rs C:\Users\Neon\.cargo\registry\src\github.com-1ecc6299db9ec823\futures-channel-0.3.21\src\mpsc\sink_impl.rs C:\Users\Neon\.cargo\registry\src\github.com-1ecc6299db9ec823\futures-channel-0.3.21\src\oneshot.rs
+
+C:\Users\Neon\.cargo\registry\src\github.com-1ecc6299db9ec823\futures-channel-0.3.21\src\lib.rs:
+C:\Users\Neon\.cargo\registry\src\github.com-1ecc6299db9ec823\futures-channel-0.3.21\src\lock.rs:
+C:\Users\Neon\.cargo\registry\src\github.com-1ecc6299db9ec823\futures-channel-0.3.21\src\mpsc\mod.rs:
+C:\Users\Neon\.cargo\registry\src\github.com-1ecc6299db9ec823\futures-channel-0.3.21\src\mpsc\queue.rs:
+C:\Users\Neon\.cargo\registry\src\github.com-1ecc6299db9ec823\futures-channel-0.3.21\src\mpsc\sink_impl.rs:
+C:\Users\Neon\.cargo\registry\src\github.com-1ecc6299db9ec823\futures-channel-0.3.21\src\oneshot.rs:

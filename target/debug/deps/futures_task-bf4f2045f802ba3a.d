@@ -1,0 +1,11 @@
+c:\Users\Neon\Desktop\Rust\maple_bot\maple_bot_rust\maple_bot_rust\target\debug\deps\futures_task-bf4f2045f802ba3a.rmeta: C:\Users\Neon\.cargo\registry\src\github.com-1ecc6299db9ec823\futures-task-0.3.21\src\lib.rs C:\Users\Neon\.cargo\registry\src\github.com-1ecc6299db9ec823\futures-task-0.3.21\src\spawn.rs C:\Users\Neon\.cargo\registry\src\github.com-1ecc6299db9ec823\futures-task-0.3.21\src\arc_wake.rs C:\Users\Neon\.cargo\registry\src\github.com-1ecc6299db9ec823\futures-task-0.3.21\src\waker.rs C:\Users\Neon\.cargo\registry\src\github.com-1ecc6299db9ec823\futures-task-0.3.21\src\waker_ref.rs C:\Users\Neon\.cargo\registry\src\github.com-1ecc6299db9ec823\futures-task-0.3.21\src\future_obj.rs C:\Users\Neon\.cargo\registry\src\github.com-1ecc6299db9ec823\futures-task-0.3.21\src\noop_waker.rs
+
+c:\Users\Neon\Desktop\Rust\maple_bot\maple_bot_rust\maple_bot_rust\target\debug\deps\futures_task-bf4f2045f802ba3a.d: C:\Users\Neon\.cargo\registry\src\github.com-1ecc6299db9ec823\futures-task-0.3.21\src\lib.rs C:\Users\Neon\.cargo\registry\src\github.com-1ecc6299db9ec823\futures-task-0.3.21\src\spawn.rs C:\Users\Neon\.cargo\registry\src\github.com-1ecc6299db9ec823\futures-task-0.3.21\src\arc_wake.rs C:\Users\Neon\.cargo\registry\src\github.com-1ecc6299db9ec823\futures-task-0.3.21\src\waker.rs C:\Users\Neon\.cargo\registry\src\github.com-1ecc6299db9ec823\futures-task-0.3.21\src\waker_ref.rs C:\Users\Neon\.cargo\registry\src\github.com-1ecc6299db9ec823\futures-task-0.3.21\src\future_obj.rs C:\Users\Neon\.cargo\registry\src\github.com-1ecc6299db9ec823\futures-task-0.3.21\src\noop_waker.rs
+
+C:\Users\Neon\.cargo\registry\src\github.com-1ecc6299db9ec823\futures-task-0.3.21\src\lib.rs:
+C:\Users\Neon\.cargo\registry\src\github.com-1ecc6299db9ec823\futures-task-0.3.21\src\spawn.rs:
+C:\Users\Neon\.cargo\registry\src\github.com-1ecc6299db9ec823\futures-task-0.3.21\src\arc_wake.rs:
+C:\Users\Neon\.cargo\registry\src\github.com-1ecc6299db9ec823\futures-task-0.3.21\src\waker.rs:
+C:\Users\Neon\.cargo\registry\src\github.com-1ecc6299db9ec823\futures-task-0.3.21\src\waker_ref.rs:
+C:\Users\Neon\.cargo\registry\src\github.com-1ecc6299db9ec823\futures-task-0.3.21\src\future_obj.rs:
+C:\Users\Neon\.cargo\registry\src\github.com-1ecc6299db9ec823\futures-task-0.3.21\src\noop_waker.rs:

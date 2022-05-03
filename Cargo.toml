@@ -1,5 +1,5 @@
 [package]
-name = "MapleRust"
+name = "MAPLE_BOT_RUST"
 version = "0.1.0"
 edition = "2021"
 
@@ -8,6 +8,7 @@ edition = "2021"
 [dependencies]
 tokio = {version = "1.18.1", features = ["macros", "rt", "rt-multi-thread"]}
 const_format = "0.2.22"
+num = "0.4.0"
     [dependencies.serenity]
     default-features = false
     features = [
