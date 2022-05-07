@@ -1,5 +1,16 @@
 use num::complex::Complex;
 
+pub fn f_from_vec(input: Vec<f64>) -> Box<dyn Fn(f64) -> f64 + 'static> {
+    Box::new(move |x: f64| -> f64 {
+        let mut sum: f64 = input[0];
+        for i in 1..(input.len())  {
+            sum += input[i]*x.powf(i as f64);
+            println!("{} {} {}", input[i]*x.powf(i as f64), i, input[i])
+        };
+        return sum;
+    })
+}
+
 pub fn derivative(f: &dyn Fn(f64) -> f64, h: f64) -> Box<dyn Fn(f64) -> f64 + '_> {
     return Box::new(move |x: f64| -> f64 {(f(x+h)-f(x-h))/(2.0*h)});
 }

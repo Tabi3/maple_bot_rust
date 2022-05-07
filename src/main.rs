@@ -1,3 +1,5 @@
+use build_app_comm::build_mfunc_app;
+use build_comms::*;
 use serenity::async_trait;
 use serenity::builder::CreateInteractionResponseData;
 use serenity::model::gateway::Ready;
@@ -9,67 +11,14 @@ use serenity::model::interactions::application_command::{
 use serenity::model::interactions::{Interaction, InteractionResponseType};
 use serenity::prelude::*;
 
+use crate::build_app_comm::build_froot_app;
+
 struct Handler;
 
-fn build_ping_func() -> Box<
-    dyn for<'b, 'c> Fn(
-            &'b mut CreateInteractionResponseData<'c>,
-        ) -> &'b mut CreateInteractionResponseData<'c>
-        + Sync
-        + Send,
-> {
-    return Box::new(
-        move |message: &mut CreateInteractionResponseData| -> &mut CreateInteractionResponseData {
-            message
-                .content("Ping Pong")
-                .embed(|e| e.field("Ping", "Pong", true).field("Pong", "Ping", true))
-        },
-    );
-}
-fn build_id_func(
-    command: &ApplicationCommandInteraction,
-) -> Box<
-    dyn for<'b, 'c> Fn(
-            &'b mut CreateInteractionResponseData<'c>,
-        ) -> &'b mut CreateInteractionResponseData<'c>
-        + Sync
-        + Send
-        + '_,
-> {
-    let optionsvar = &*command
-        .data
-        .options
-        .get(0)
-        .expect("jfsk")
-        .resolved
-        .as_ref()
-        .expect("yes");
-    Box::new(
-        move |message: &mut CreateInteractionResponseData| -> &mut CreateInteractionResponseData {
-            if let ApplicationCommandInteractionDataOptionValue::User(user, _member) =
-                &optionsvar.clone()
-            {
-                message.content(format!("{}'s id is {}", user.tag(), user.id))
-            } else {
-                message.content("Please provide a valid user".to_string())
-            }
-        },
-    )
-}
+mod test_module;
+mod build_comms;
+mod build_app_comm;
 
-fn build_not_impl_func() -> Box<
-    dyn for<'b, 'c> Fn(
-            &'b mut CreateInteractionResponseData<'c>,
-        ) -> &'b mut CreateInteractionResponseData<'c>
-        + Sync
-        + Send,
-> {
-    return Box::new(
-        move |message: &mut CreateInteractionResponseData| -> &mut CreateInteractionResponseData {
-            message.content("not implemented :(")
-        },
-    );
-}
 
 #[async_trait]
 impl EventHandler for Handler {
@@ -78,6 +27,8 @@ impl EventHandler for Handler {
             let content = match command.data.name.as_str() {
                 "id" => build_id_func(&command),
                 "ping" => build_ping_func(),
+                "mfunc" => build_mfunc_func(&command),
+                "froot" => build_froot_func(&command),
                 _ => build_not_impl_func(),
             };
 
@@ -99,7 +50,7 @@ impl EventHandler for Handler {
 
         let guild_id = GuildId(906461867310977075);
 
-        let _commands = GuildId::set_application_commands(&guild_id, &ctx.http, |commands| {
+        let commands = GuildId::set_application_commands(&guild_id, &ctx.http, |commands| {
             commands
                 .create_application_command(|command| {
                     command
@@ -116,8 +67,11 @@ impl EventHandler for Handler {
                 .create_application_command(|command| {
                     command.name("ping").description("Ping command")
                 })
+                .create_application_command(build_mfunc_app())
+                .create_application_command(build_froot_app())
         })
         .await;
+        println!("{:?}", commands);
     }
 }
 
